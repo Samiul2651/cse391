@@ -185,13 +185,14 @@ td {
   display: block;
 }
 .online-judge ul{
-  list-style: circle;
+  list-style: none;
   font-size: 14px;
   margin: 10px 0;
 }
 
 .online-judge ul{
   justify-content : center;
+  text-decoration: none;
 }
 
 /*---------Projects-----------*/
