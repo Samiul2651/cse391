@@ -1,0 +1,58 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.quote_generator {
+    max-width: 550px;
+    border: 10px solid yellow;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: green;
+    color: yellow;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.Box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.box-1,.box-2,.box-3,.box-4 {
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+.box-1 {
+    background-color: yellow;
+}
+
+.box-2 {
+    background-color: green;
+}
+
+.box-3 {
+    background-color: blue;
+}
+
+.box-4 {
+    background-color: red;
+}
+
+.magic_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}

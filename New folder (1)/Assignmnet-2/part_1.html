@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title> Assignment-2 </title>
+  <link rel="stylesheet" href="part_1.css">
+
+  
+
+</head>
+<body onload="Gererate_Quote(), ConvertUnit(converter.value,unit.value), calculateAll(calculator.value)">
+  <div class="container">
+    <div id="quote_generator" class="quote_generator">
+        <span id="quote"></span>
+    </div>
+    <div class="Box">
+      <div class="box-1" onclick="Change_Color('box1')"></div>
+      <div class="box-2" onclick="Change_Color('box2')"></div>
+      <div class="box-3" onclick="Change_Color('box3')"></div>
+      <div class="box-4" onclick="Change_Color('box4')"></div>
+    </div>       
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <label for="unit"> Converter</label>
+    <input type="text" name="unit" id="unit" value="1">
+    <select name="convert-to" id="converter">
+      <option value="1">lb-to-kg</option>
+      <option value="2">kg-to-lb</option>
+    </select>
+    <input type="submit" onclick="ConvertUnit(converter.value, unit.value)">
+    <span id="output"></span>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <input type="text" name="calculator" id="calculator" onkeyup="calculateAll(calculator.value)" value="12,34,53">
+    <div>
+      <p>Min : <span id="min"></span></p>
+      <br>
+      <p>Max : <span id="max"></span></p>
+      <br>
+      <p>Sum : <span id="sum"></span></p>
+      <br>
+      <p>Average : <span id="average"></span></p>
+      <br>
+      <p>Reverse : <span id="reverse"></span></p>
+      
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <textarea id="magic_box" cols="30" rows="20" class="magic_box"></textarea>
+    <div class="buttons">
+      <button onclick="clearAll()">Clear it</button>
+      <button onclick="capitalize()">Capitalize</button>
+      <button onclick="sortText()">Sort</button>
+      <button onclick="reverseText()">Reverse</button>
+      <button onclick="stripBlank()">Strip Blank</button>
+      <button onclick="addNumbers()">Add Numbers</button>
+      <button onclick="shuffleText()">Shuffle</button>
+    </div>
+  </div>
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

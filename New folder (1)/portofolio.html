@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title> Personal Portfolio Website </title>
+  <link rel="stylesheet" href="portfolio.css">
+  <link 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+  rel="stylesheet"  type='text/css'>
+
+</head>
+
+<body>
+<!----------- Header ----------->
+<div id="Header">
+  <div class="container">
+    <nav>
+      <a href="#home" class="logo"><span>I</span>shtiaq <span>S</span>amiul</a>
+      <ul>
+        <li><a href="#home">Home </a> </li>
+        <li><a href="#about">About </a> </li>
+        <li><a href="#projects">Projects </a> </li>
+        <li><a href="#achievements">Achievements </a> </li>
+        <li><a href="#contact">Contact </a> </li>
+      </ul>
+    </nav>
+    <div class="Header-text">
+      <p>Back-End Developer</p>
+      <h1>Hi I'm <span>Ishtiaq</span><br> From Dhaka.</h1>
+    </div>
+    
+  </div>
+
+</div>
+<!-- -----------About---------- -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/about2.png">
+      </div>
+      <div class="about-col-2">
+        <h1 class="Sub-title">About Me</h1>
+        <p>Hi I'm Ishtiaq Samiul. I am currently pursuing my Bsc degree in Coumputer Science at <a href="https://www.bracu.ac.bd">Brac University</a>. I am currently in my 4th year of studies and hope to graduate by January 2024. I love solving programming problems and learning new things. </p>
+        <br>
+        <p style="font-size: 20px; font-family: cursive; font-weight: bold;">Favourite Quotes:</p>
+        <table class="GeneratedTable">
+          <thead>
+            <tr>
+              <th>Quote By</th>
+              <th>Quote</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Plato</td>
+              <td>Wise men speak because they have something to say; fools because they have to say something.</td>
+            </tr>
+            <tr>
+              <td>Winston Churchill</td>
+              <td>Courage is what it takes to stand up and speak. Courage is also what it takes to sit down and listen.</td>
+            </tr>
+          </tbody>
+        </table>
+  
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="skills">
+          <ul style="color: #b54769;">
+            <li>Java</li>
+            <li>C++</li>
+            <li>Python</li>
+            <li>Spring Boot</li>
+            <li>Angular</li>
+            <li>MY SQL</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2020 - Present</span>
+              <br>  Brac University
+              <br>  Bsc in CSE
+              <br>  CGPA: 3.84
+            </li>
+
+            <li><span>2012 - 2018</span>
+              <br>  Mirzapur Cadet College
+              <br>  H.S.C(Science)
+              <br>  GPA: 5.00
+              <br>  S.S.C(Science)
+              <br>  GPA: 5.00
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>Student Tutor</span>
+              <br>  Brac University
+              <br>  Jan 2023 - Apr 2023
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
+<!-- -------Projects--------- -->
+<div class="container">
+  
+</div>
+
+<div id="projects">
+  <div class="container">
+    <h1 class="Sub-title">My Projects</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/doctor.jpg">
+        <div class="layer">
+          <h3>Hospital management System</h3>
+          <p>Here I with my group-mates created a Hospital management system.
+          Technology used : PHP, HTML, CSS , JAVASCRIPT, MYSQL</p>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/student.png">
+        <div class="layer">
+          <h3>Student management System</h3>
+          <p>Here I created a Student management system.<br>
+          Technology used : JAVA, SPRING-BOOT, ANGULAR, HTML, CSS , TYPESCRIPT, MYSQL</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<!-- Acievements -->
+<div id="achievements">
+  <div class="container">
+    <h1 class="Sub-title">Achievements</h1>
+    <p>One of my great experiences that I am really proud of was being a Student Tutor(Undergraduate Teaching Assistant) at Brac University from January 2023 - April 2023. I was able to learn the difficulties and challeges of teaching and helping others.</p>
+    <br>
+    <p>
+    I also love solving programming problems. So far I have solved more than 600 online problems as various online judges as Codeforces, Codechef, Leetcode etc.
+    </p>
+  </div> 
+  
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<!-- Contacts -->
+<div id="contact">
+  <div class="container">
+    <div class="contact-me">
+      <h1 class="Sub-title">Contact Me</h1>
+      <p><i class="fas fa-paper-plane" style="overflow: visible;"></i> ishtiak.samiul.2651@gmail.com</p>
+      <br>
+      <p><i class="fas fa-phone"></i> 01733035157</p>
+      <div class="social">
+        <a href="https://www.facebook.com/istiaksamiul.turjo" ><i class="fab fa-facebook"></i></a>
+        <a href="https://bd.linkedin.com/in/ishtiaq-samiul-45a3331b7" ><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<footer class="container" style="text-align: left; font-size: 10px;">
+  <p>Last modified :<span id="date"></span></p>
+  <p>Location :<span id="location"></span></p>
+</footer>
+
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname) {
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+  document.getElementById('date').innerText = document.lastModified;
+  document.getElementById('location').innerText = window.location.href;
+</script>
+
+
+
+</body>
+
+</html>
