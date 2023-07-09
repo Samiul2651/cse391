@@ -184,7 +184,11 @@ td {
 .tab-contents.active-tab{
   display: block;
 }
-
+.online-judge ul{
+  list-style: circle;
+  font-size: 14px;
+  margin: 10px 0;
+}
 
 
 /*---------Projects-----------*/
