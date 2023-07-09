@@ -190,6 +190,9 @@ td {
   margin: 10px 0;
 }
 
+.online-judge ul{
+  justify-content : center;
+}
 
 /*---------Projects-----------*/
 .work-list{
