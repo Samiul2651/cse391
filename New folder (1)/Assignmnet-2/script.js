@@ -117,6 +117,7 @@ function capitalize() {
     	}
     }
     cap += 1;
+    console.log(cap);
     var newText = newLines.join('\n');
     document.getElementById('magic_box').value = newText;
 }
