@@ -101,14 +101,22 @@ function calculateAll(text) {
 function clearAll(){
     document.getElementById('magic_box').value = "";
 }
-
+var cap = 0;
 function capitalize() {
     var text = document.getElementById('magic_box').value;
     var lines = text.split('\n');
     var newLines = [];
-    for(i of lines){
-        newLines.push(i.toUpperCase());
+    if(cap % 2 == 0){
+    	for(i of lines){
+            newLines.push(i.toUpperCase());
+    	}
     }
+    else{
+    	for(i of lines){
+            newLines.push(i.toLowerCase());
+    	}
+    }
+    cap += 1;
     var newText = newLines.join('\n');
     document.getElementById('magic_box').value = newText;
 }
